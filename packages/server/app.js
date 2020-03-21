@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const homeRouter = require('./routes/homeRoutes');
+const homeRouter = require('./src/routes/homeRoutes');
 
 const app = express();
 
