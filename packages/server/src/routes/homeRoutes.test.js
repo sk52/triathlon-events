@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../app');
+const app = require('../../app');
 
 describe('Health check endpoint', () => {
     test('Should respond to /health with 200 status', () => {
@@ -13,6 +13,7 @@ describe('Health check endpoint', () => {
 describe('Test the root path', () => {
     test('Should respond to GET method', () => {
         return request(app).get("/").then(response => {
+            expect(response.text).toBe("/ route page");
             expect(response.statusCode).toBe(200);
         });
     });
