@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server",
     "start:watch": "nodemon server",
-    "test": "jest"
+    "test": "jest",
+    "test:ci": "npm run test -- --watchAll=false"
   },
   "keywords": [],
   "author": "",

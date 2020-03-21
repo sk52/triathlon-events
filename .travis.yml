@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - 12.16.0
+
+before_script:
+  - npx lerna bootstrap
+  
+jobs:
+  include:
+    - stage: "Test client"
+      script:
+        - cd $TRAVIS_BUILD_DIR/packages/client
+        - npm run test:ci
+    - stage: "Test server"
+      script:
+        - cd $TRAVIS_BUILD_DIR/packages/server
+        - npm run test:ci
