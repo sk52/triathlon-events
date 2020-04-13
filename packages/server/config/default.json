@@ -1,0 +1,5 @@
+{
+    "api": {
+        "britishTriathlonUrl": "https://api.britishtriathlon.org/openactive/v1/events"
+    }
+}
