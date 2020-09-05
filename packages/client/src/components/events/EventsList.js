@@ -6,7 +6,7 @@ function EventsList() {
   const [events, setEvents] = useState([]);
 
   const getEvents = async () => {
-    const events = await axios.get(`http://localhost:4000/api/events`).then(response => {
+    const events = await axios.get(`/api/events`).then(response => {
         return response.data;
     });
     setEvents(events);
