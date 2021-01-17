@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 const config = require('config');
 const HttpError = require('../../utils/httpError');
 
-async function getEvents () {
+async function getEvents() {
     let result;
 
     try {
@@ -14,7 +14,7 @@ async function getEvents () {
             'Error, could not connect to external API',
             500
         );
-        throw(apiError);
+        throw apiError;
     }
     return result;
 }
