@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
-const EventModal = ({ name, description, show, onHide }) => {
+export function EventModal({ name, description, show, onHide }) {
     return (
         <Modal show={show} onHide={onHide}>
             <Modal.Dialog>
@@ -22,6 +22,4 @@ const EventModal = ({ name, description, show, onHide }) => {
             </Modal.Dialog>
         </Modal>
     );
-};
-
-export default EventModal;
+}
