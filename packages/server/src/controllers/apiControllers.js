@@ -8,5 +8,5 @@ const getEvents = async (req, res) => {
 
     res.status(200);
     res.send(events);
-}
+};
 exports.getEvents = getEvents;
